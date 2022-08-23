@@ -1,0 +1,43 @@
+#section_usps {
+  display: flex;
+  flex-wrap: wrap;
+  .usp-item {
+    width: 25%;
+    padding: 0 1rem;
+    @media screen and (max-width:992px){
+      width: 50%;
+      padding: 1rem;
+    }
+    @media screen and (max-width:768px){
+      width: 100%;
+    }
+    .usp-inner {
+       position: relative;
+       padding: 2rem;
+       border: 1px solid $secondary-color;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 100%;
+       .icon-wrap {
+         position: absolute;
+         top: -1.5rem;
+         left: -1.5rem;
+         background-color: $white-color;
+         padding: 1rem;
+         border-radius: 50%;
+         svg {
+           height: 35px;
+           width: 35px;
+           path {
+             fill: $primary-color;
+           }
+         }
+       }
+       .content-wrap {
+         position: relative;
+         z-index: 10;
+       }
+    }
+  }
+}

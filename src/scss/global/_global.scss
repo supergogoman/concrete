@@ -1,0 +1,84 @@
+// Global
+html {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $white-color;
+}
+
+p {
+  font-size: .9rem;
+  color: $grey-color;
+}
+
+
+// Links
+a {
+  transition: .25s;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+// Display
+
+.hidden {
+  display: none;
+}
+
+// Grid
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.sect-py {
+  padding: 5rem 0;
+  @media screen and (max-width:992px){
+    padding: 3rem 0;
+  }
+  @media screen and (max-width:768px){
+    padding: 1.5rem 0;
+  }
+}
+
+.sect-pt {
+  padding: 5rem 0 0 0;
+  @media screen and (max-width:992px){
+    padding: 3rem 0 0 0;
+  }
+  @media screen and (max-width:768px){
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+.sect-pb {
+  padding: 0 0 5rem 0;
+  @media screen and (max-width:992px){
+    padding: 0 0 3rem 0;
+  }
+  @media screen and (max-width:768px){
+    padding: 0 0 1.5rem 0;
+  }
+}
+
+// Images
+.img-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+// Header Buffer
+#header-buffer {
+  margin-top: 123px;
+}

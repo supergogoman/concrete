@@ -1,0 +1,36 @@
+header {
+  background-color: $white-color;
+  box-shadow: $box-shadow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  > div {
+    display: flex;
+    #site-logo {
+      padding: 1rem;
+      img {
+        max-width: 150px;
+      }
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      div {
+        width: 100%;
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          li {
+            margin-right: 1rem;
+            a {
+              color: $dark-color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

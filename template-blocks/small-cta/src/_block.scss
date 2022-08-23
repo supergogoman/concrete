@@ -1,0 +1,24 @@
+#section_small-cta {
+  background-color: $primary-color;
+  > div {
+    display: flex;
+    align-items: center;
+    .left-col, .right-col {
+      width: 50%;
+    }
+    .left-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > div {
+        padding: 2.5rem;
+        background-color: $white-color;
+      }
+    }
+    .right-col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.btn {
+  padding: 1rem 1.5rem;
+  text-transform: capitalize;
+  transition: .25s;
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block; 
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $white-color;
+  &:hover {
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.btn-secondary {
+  color: $dark-color;
+  border-color: $dark-color;
+  &:hover {
+    background-color: $accent-color;
+    border-color: $accent-color;
+  }
+}

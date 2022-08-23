@@ -1,0 +1,39 @@
+#section_banner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85vh;
+  min-height: 500px;
+  max-height: 1000px;
+  .left-col, .right-col {
+    width: 50%;
+    @media screen and (max-width:992px){
+      width: 100%;
+    }
+  }
+  .left-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > div:first-child {
+      padding: 5rem;
+      @media screen and (max-width:992px){
+        padding: 1.5rem;
+      }
+      h4 {
+        color: $primary-color;
+      }
+      > div {
+        margin-top: 1rem;
+        a:first-child {
+          margin-right: .5rem;
+          @media screen and (max-width: 768px){
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .right-col {
+    position: relative;
+  }
+}

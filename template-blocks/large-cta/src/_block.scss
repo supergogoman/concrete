@@ -1,0 +1,28 @@
+#section_large-cta {
+  padding: 5rem;
+  @media screen and (max-width:992px){
+    padding: 2.5rem;
+  }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div:not(.overlay) {
+    position: relative;
+    z-index: 10;
+    background-color: $white-color;
+    padding: 3rem 3.5rem;
+    @media screen and (max-width:768px){
+      padding: 3rem 1.5rem;
+    }
+    max-width: 1000px;
+    text-align: center;
+    h4 {
+      color: $primary-color;
+    }
+  }
+  .overlay {
+    z-index: 5;
+    opacity: .7;
+  }
+}

@@ -1,0 +1,54 @@
+footer, #site-base {
+  color: $white-color;
+  padding: 1rem 0;
+  a {
+    color: $white-color;
+  }
+}
+
+footer {
+  background-color: $secondary-color;
+}
+
+#site-base {
+  background-color: $dark-color;
+  font-size: .8rem;
+  p {
+    margin: 0;
+  }
+  > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left-col {
+
+    }
+    .right-col {
+      display: flex;
+      align-items: center;
+      a {
+        svg {
+          margin-left: 0.5rem;
+          width: 2rem;
+          transition: .25s;
+          vertical-align: middle;
+          opacity: .5;
+          path, circle {
+            fill: $white-color;
+          }
+        }
+        &:hover {
+          svg {
+            opacity: 1;
+            #c-left{
+              fill: #B797DC;
+            }
+            #c-right{
+              fill: #8EDCE6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
